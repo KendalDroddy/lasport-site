@@ -7,6 +7,11 @@
        url('../fonts/abolition-regular-webfont.ttf') format('truetype');
 }
 
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
 h1 {  
   font-size: 6.625rem; /* 90px/16px  */
   text-shadow: 4px 4px 10px rgba(0,0,0, .9);
@@ -40,9 +45,9 @@ h1 {
   margin-bottom: 1px;
 }
 
+/*Quote Component*/
 .quote {
-  font-size: 1.75rem; /* 20px/16px */
-  /*line-height: 1.6;*/ 
+  font-size: 1.60rem; /* 20px/16px */
   color: #130f38; 
   border-bottom: solid 1px #130f38;
   border-top: solid 1px #130f38;
@@ -53,28 +58,44 @@ h1 {
   font-family: 'Oswald', sans-serif;
 }
 
-.about {
-  padding-top: 5%;
-  padding-left: 2%;
-  padding-right: 2%;
-  background-color: #130f38;
+/*Main Content*/
+.about, .learn-more {
+  padding-top: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
   font-family: 'Oswald', sans-serif;
   font-size: 1.45rem;
 }
 
-.footer {
+.about {
   background-color: #130f38;
-  font-family: 'Oswald', sans-serif;
-  letter-spacing: 1px;
-  font-size: 1.325rem;
 }
 
+.learn-more {
+  background-color: #cf1b2d;
+}
+
+.btn {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.45rem;
+  color: #130f38;
+}
+
+/*Carousel*/
 .carousel-item.active,
 .carousel-item-next,
 .carousel-item-prev {
   display: block !important;
 }
 
+/*Footer*/ 
+.footer {
+  background-color: #130f38;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 1px;
+  font-size: 1.325rem;
+  max-width: 1440px;
+}
 
 /*Media Queries*/
 @media (max-width: 576px) {
@@ -86,9 +107,26 @@ h1 {
 }
 }
 
-/*@media (min-width: 1448px) {
-  .wrapper {
-    max-width: 1500px;
-    margin: 0 auto;
+@media (max-width: 1118px) {
+  .about, .learn-more {
+    font-size: 1.25rem;
   }
-}*/
+}
+
+@media (max-width: 991px) {
+  .about-img {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .about, .learn-more {
+    padding-left: 10%;
+    padding-right: 10%;
+    min-height: 300px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .about, .learn-more {
+    font-size: 1.65rem;
+  }
+}
