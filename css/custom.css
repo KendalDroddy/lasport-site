@@ -88,6 +88,11 @@ h1 {
   display: block !important;
 }
 
+#mycarousel {
+  /*background: #130f38;*/
+  background-color: #130f38;
+}
+
 /*Footer*/ 
 .footer {
   background-color: #130f38;
@@ -107,7 +112,7 @@ h1 {
 }
 }
 
-@media (max-width: 1118px) {
+@media (max-width: 1126px) {
   .about, .learn-more {
     font-size: 1.25rem;
   }
@@ -125,7 +130,7 @@ h1 {
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1281px) {
   .about, .learn-more {
     font-size: 1.65rem;
   }
